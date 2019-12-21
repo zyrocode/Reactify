@@ -1,3 +1,5 @@
+@import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +7,300 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #121212 !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.bodyContainer {
+  margin-left: 231px;
+  padding: 50px;
+  color: white;
+  z-index: 0;
+}
+
+.card {
+  flex: 2;
+  background-color: #282828 !important;
+  max-width: 250px !important;
+  min-width: 160px !important;
+  padding: 13px;
+  transition: all 0.3s;
+  border-radius: 12px !important;
+}
+
+.card:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+
+.card-title {
+  color: #1DB954;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.card-subtitle {
+  font-size: 80%;
+}
+
+.artistIcon {
+  font-weight: 600;
+}
+
+.artistIcon::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f007";
+  padding-right: 3px;
+  font-weight: 900;
+  float: right;
+}
+
+.comment {
+  margin-top: 10px !important;
+  font-size: 70%;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.comment::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 120%;
+  content: "\f075";
+  padding-right: 3px;
+  font-weight: 900;
+  float: right;
+}
+
+.comment:hover {
+  background-color: #78797E;
+}
+
+.artist:hover {
+  text-decoration: underline;
+}
+
+.card {
+  margin: 13px;
+  z-index: 0;
+}
+
+footer {
+  background-color: #282828;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  line-height: 90px;
+  min-height: 90px;
+  display: flex;
+}
+
+.footer-left {
+  min-width: 180px;
+  display: flex;
+  z-index: 1000;
+}
+
+.footer-left>img {
+  width: 60px;
+  height: 60px;
+  margin: 10px 1% 5px 5%;
+  border-radius: 45px;
+}
+
+.track-info {
+  line-height: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.track-info>.title {
+  color: white;
+}
+
+.track-info>.artist {
+  color: #b3b3b3;
+  font-size: 80%;
+}
+
+.player {
+  margin: auto;
+  width: 500px;
+}
+
+.row {
+  max-width: 100% !important;
+  margin-top: 20px;
+}
+
+.search {
+  background-color: #282828 !important;
+  width: 100% !important;
+  position: fixed;
+  margin-top: -50px;
+  margin-left: -50px;
+  border-color: #282828 !important;
+  border-radius: 0px !important;
+  font-size: 200% !important;
+  padding: 30px !important;
+  color: white !important;
+  z-index: 1;
+}
+
+.indicator {
+  background-color: white !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  margin-top: 15px;
+}
+
+.progress-bar-wrapper {
+  color: white !important;
+}
+
+.toggle-play-button {
+  background-color: #282828 !important;
+  border: 1px solid white;
+}
+
+.play-icon {
+  left: 11px !important;
+  top: 0px;
+  border-radius: 3px;
+  transform: scale(0.8);
+}
+
+.pause-icon {
+  left: 9px !important;
+  top: 0px;
+  border-radius: 2px;
+  transform: scale(0.8);
+  box-shadow: rgb(40, 40, 40, 1) 7px 0px 0px 0px inset !important;
+}
+
+.comment-modal {
+  background-color: #282828;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  width:100% !important;
+  min-width: 500px;
+}
+
+.close {
+  color: white !important;
+  text-shadow: none !important;
+  cursor: pointer;
+}
+
+.close::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 120%;
+  content: "\f057";
+  padding-right: 3px;
+  font-weight: 900;
+  margin-right: 5px
+}
+
+.progress-bar {
+  background-color: white !important;
+  min-height: 3px;
+  border-radius: 25px;
+  margin-bottom: -65px;
+  margin-top: 15px;
+
+}
+
+.volume-controls {
+  margin-top: 30px;
+}
+
+.volumn {
+  border-bottom-color: #1db954 !important;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+
+.nav {
+  width: 231px;
+  background-color: #040404;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 1;
+}
+
+.nav-link {
+  color: #78797E;
+  transition-duration: 0.5s;
+  font-weight: 700;
+  padding: 12px !important;
+}
+
+.home-icon::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 120%;
+  content: "\f015";
+  padding-right: 3px;
+  font-weight: 900;
+  margin-right: 5px
+}
+
+.search-icon::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 120%;
+  content: "\f002";
+  padding-right: 3px;
+  font-weight: 900;
+  margin-right: 5px
+}
+
+.active {
+  color: #1DB954 !important;
+}
+
+.loading {
+  display: block;
+}
+
+.loading-img {
+  width: 200px;
+  padding: 40px;
+}
+
+
+.nav-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.flex {
+  background-color: #282828 !important;
+  box-shadow: none !important;
+
+}
+
+svg {
+  color: #1DB954;
+  transform: scale(0.7);
+  padding-top: 13px;
+}
+
+a {
+  color: #bebebe !important;
+}
+
+a:hover {
+  color: white !important;
+  text-decoration: none !important;
 }
